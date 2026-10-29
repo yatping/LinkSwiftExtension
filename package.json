@@ -1,0 +1,28 @@
+{
+  "name": "linkswift-extension",
+  "description": "LinkSwiftExtension — the LinkSwift (网盘直链下载助手) userscript packaged as a Chrome extension with WXT",
+  "private": true,
+  "version": "1.1.4",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare",
+    "update-userscript": "node scripts/update-userscript.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "@types/jquery": "^4.0.1",
+    "typescript": "^7.0.2",
+    "wxt": "^0.21.5"
+  },
+  "dependencies": {
+    "@sweetalert2/theme-dark": "^5.0.26",
+    "jquery": "^3.6.0",
+    "js-md5": "^0.7.3",
+    "sweetalert2": "^11.4.8"
+  }
+}
